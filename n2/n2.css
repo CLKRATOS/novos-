@@ -1,0 +1,22 @@
+.conteine{
+    background-color:maroon;
+    width:100vh;
+    height: 100vh;
+
+}
+.box{
+    width:400px;
+    height:200px;
+    background-color: black;
+    transition-duration: 2s;
+}
+.box:hover{
+    width:500px;
+    height: 600px;
+
+    transform: translateZ(100px);
+    transition-timing-function: ease;
+    transition-duration: 1s;
+    
+    
+}

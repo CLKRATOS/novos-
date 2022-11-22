@@ -1,0 +1,36 @@
+*{
+    padding:0px;
+    margin:0px;
+
+}
+.conteine{
+    color:aliceblue;
+    padding: 4px;
+    position: relative;
+    width: 200px;
+    height:400px;
+    background-color:black;
+    left: -195px;
+    top:-360px;
+    transition-duration: 0.5s;
+    transition-property: top, left;
+    box-sizing:border-box ;
+    
+}
+.conteine:hover{
+    border: 10px solid red;
+    left: 0px;
+    top:0px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+   
+}
+.j{
+    background-color: aquamarine;
+    width:100px;
+    height:100px;
+    position: sticky;
+    top:0;
+    margin:auto;
+}
