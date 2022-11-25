@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conteine:hover{
+            transition-duration: 8s;
+           transition-timing-function: ease-in-out;
+            transform: rotateY(360deg);
+
+        }
+        .conteine{
+            position: relative;
+             width:200px;
+            height:200px;
+        }
+        /*.box:hover{
+         
+        }
+        */
+        .box{
+            width:200px;
+            height:200px;
+            background: black;  
+           
+            
+        }
+
+        /*.box2:hover{
+           transition-duration: 8s;
+           transition-timing-function: ease-in-out;
+            transform: rotateY(360deg);
+            border-radius: 20px;
+        }
+        */
+        .box2{
+            position: absolute;
+            top:0px;
+           
+            width:200px;
+            height:200px;
+            background: rgb(114, 54, 54);
+        }
+    </style>
+</head>
+<body>
+    <div class="conteine">
+        <div class="box"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

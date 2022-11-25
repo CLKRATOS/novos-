@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin:0px;
+            font-family: sans-serif;
+
+        }
+        body{
+            background-image: linear-gradient(to right,blue, slateblue);
+        }
+        header{
+            color: white;
+            text-align: center;
+            padding:30px;
+            border-bottom: 1px solid black;
+        }
+        header h1 {
+            text-shadow:3px 3px 10px black;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid;
+            width: 400px;
+            margin: 30px  auto;
+            background-color: slateblue;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 400px;
+            margin: 30px  auto;
+            background-color: slateblue;
+        }
+        main h1{
+            text-shadow:0px 1px 18px black;
+            margin-top: 20px;
+            text-transform: capitalize;
+
+
+        }
+        label{
+            margin: 20px auto 10px auto;
+            font-size:1.3em;
+            text-shadow:0px 1px 18px black;
+            font-weight: bold;
+
+        }
+        input{
+            text-align:center;
+            color:white;
+            background-color: transparent;
+            border: none;
+            border-bottom:1px solid black;
+            font-size:1.2em;
+            outline: none;
+        }
+
+        .button{
+            font-size:1.2em;
+            border: 1px solid black;
+            padding: 5px;
+            background-color: rgb(79, 67, 156);
+            color:white;
+            margin:20px;
+        }
+
+
+    </style>
+    <title>nota</title>
+</head>
+<body>
+    <header>
+        <h1>Nota do aluno </h1>
+    </header>
+    <main>
+        <h1>Informações do aluno </h1>
+        <label for="">Nota 1 </label>
+        <input type="text" id="n1" required>
+        <label for="">Nota 2 </label>
+        <input ty34pe="text" id="n2" required>
+        <input type="button" class="button" value="Enviar" onclick="nota()">
+        <p class="p"></p>
+    </main>
+
+    <script>
+        function nota() {
+            var n1 = window.document.querySelector("#n1" )
+            var n2 = window.document.querySelector("#n2" )
+            var p = window.document.querySelector('.p')
+            var nota =   (Number(n1.value)  +  Number(n2.value))/2
+
+            if(nota > 7 ){
+                p.innerHTML = `A sua nota foi ${nota} e você esta  APROVADOR`
+            }else{
+                if(nota < 7  && nota >= 4){
+                    p.innerHTML = `A sua nota foi ${nota} e você esta  RECUPERAÇÃO`
+                }else{
+                    p.innerHTML = `A sua nota foi ${nota} e você esta  REPROVADOR`
+                } 
+
+            }
+            //estilor da resposta 
+            p.style.color = 'white'
+            p.style.borderBottom = '1px solid black '   
+            p.style.margin = '20px  '
+            p.style.textAlign = 'center'
+            p.style.width = '100%'
+            p.style.fontSize = '1.1em'
+        }
+
+    </script>
+</body>
+</html>

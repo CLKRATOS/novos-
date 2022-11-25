@@ -1,0 +1,47 @@
+
+
+.po{
+    margin: auto;
+    width: 300px;
+    height:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p{  
+    z-index: -1;
+    border-radius: 90%;
+    background-color: rgba(0, 253, 4, 0.752);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    animation: p 2s ease-in-out infinite;
+}
+.o{
+  
+    border-radius: 90%;
+    background-color: rgba(255, 0, 0, 0.752);
+    width: 30px;
+    height: 30px;
+    animation: o 2s ease-in-out infinite;
+}
+
+@keyframes p {
+    0%,100%{
+        transform: translateX(12px);
+    }
+    50%{
+        transform: translateX(-12px);
+    }
+    
+    
+}
+@keyframes o {
+    0%,100%{
+        transform: translateX(-12px);
+    }
+    50%{
+        transform: translateX(12px);
+    }
+    
+}

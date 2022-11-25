@@ -19,6 +19,7 @@ form{
     border: 1px solid black;
     border-radius:10px;
     padding:10px;
+    position: absolute;
 
 }
 .l{
@@ -55,11 +56,11 @@ label{
     transition-timing-function: ease-in-out;
 }
 
-.l input:focus + label,
-.l input:valid + label{
+ input:focus ~ label,
+ input:valid ~ label {
   
-    margin-top: 0px;
-    transform: translateY(-20px);
+   top:-20px;
+   
 
 }
 

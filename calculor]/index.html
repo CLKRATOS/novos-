@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header> 
+        <h1>claculor</h1></header>
+    <main>
+        <div class="sele">
+
+            <table>
+                <thead>
+                    <th colspan="2">Coloque o numero que <br> você quer fazer o calculor</th>
+                </thead>
+               <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>+:somar</td>
+                </tr>
+                <tr>
+                     <th>2</th>
+                    <td>-:subitrção</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>*:mutiplicação</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>/:divisão</td>
+                </tr>
+               </tbody>
+               <tfoot>
+                    <tr>
+                        <td colspan="23"><input type="text" id="cal"></td>
+
+                    </tr>
+               </tfoot>
+            </table>
+        </div>
+        <div class="res">
+            <label for="">Numero 1 </label>
+            <input type="text" id="n1">
+            <label for="">Numero 2 </label>
+            <input type="text" id="n2">
+            <button onclick="calcular()" >Enviar</button>
+            <p class="p"></p>
+        </div>
+
+    </main>
+    <footer></footer>
+     
+    <script src="js.js"></script>
+</body>
+</html>
